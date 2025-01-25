@@ -1,0 +1,17 @@
+{
+    "device_id": "127.0.0.1:21503",
+    "adb_adress": "Z:/Viking Rise/Microvirt/MEmu/",
+    "emulator": "MEmu",
+    "max_marches": 4,
+    "lvl_farm": 5,
+    "lvl_sawmill": 2,
+    "lvl_query": 6,
+    "lvl_gold": 6,
+    "lvl_niflung": 4,
+    "help_button": true,
+    "gather_farm": true,
+    "gather_sawmill": false,
+    "gather_query": false,
+    "gather_gold": false,
+    "train_gruz": true
+}
