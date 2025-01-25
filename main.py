@@ -1,6 +1,5 @@
 from itertools import count
-from multiprocessing import Process
-from time import sleep, time
+from time import sleep
 import os
 import sys
 
@@ -13,7 +12,6 @@ from log import log_action
 import main_commands
 import global_command
 
-count = 0
 def reboot():
     """
     Перезапуск программы.
@@ -112,16 +110,13 @@ def main_program():
             global_command.gather_gold()
             sleep(1)
             count += 1
-            ismarches = False
-        if not ismarches:
-            ismarches = wait_for_march()
 
 if __name__ == "__main__":
     count = 0
     # Запуск таймера в отдельном процессе
-    log_action("Начинаю программу")
-    timer_process = Process(target=reboot_timer, daemon=True)
-    timer_process.start()
+    #log_action("Начинаю программу")
+    #timer_process = Process(target=reboot_timer, daemon=True)
+    #timer_process.start()
 
     # Запуск основного кода программы
     main_program()
